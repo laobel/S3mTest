@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8dca33ae-d894-42bb-a618-dba5277602a1" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7923">
+              <caret line="417" selection-start-line="417" selection-end-line="417" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/db.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2165221">
+              <caret line="115836" column="600" selection-start-line="115836" selection-start-column="600" selection-end-line="115836" selection-end-column="600" />
+              <folding>
+                <element signature="e#4344203#4345378#0" />
+                <element signature="e#4345402#4346200#0" />
+                <element signature="e#4346230#4348411#0" />
+                <element signature="e#4348441#4358527#0" />
+                <element signature="e#4358552#4361726#0" />
+                <element signature="e#5836384#5842586#0" />
+                <element signature="e#5842614#5842852#0" />
+                <element signature="e#5842883#5843253#0" />
+                <element signature="e#5843281#5844268#0" />
+                <element signature="e#5844293#5844542#0" />
+                <element signature="e#5844567#5844631#0" />
+                <element signature="e#5844662#5845698#0" />
+                <element signature="e#5845741#5846105#0" />
+                <element signature="e#5846136#5847289#0" />
+                <element signature="e#5847323#5847510#0" />
+                <element signature="e#5847535#5852069#0" />
+                <element signature="e#5852094#5852294#0" />
+                <element signature="e#5852325#5854326#0" />
+                <element signature="e#5854357#5854498#0" />
+                <element signature="e#5854541#5859385#0" />
+                <element signature="e#5859416#5859524#0" />
+                <element signature="e#5859558#5859747#0" />
+                <element signature="e#5859775#5859928#0" />
+                <element signature="e#5859956#5860070#0" />
+                <element signature="e#5860098#5866330#0" />
+                <element signature="e#5866355#5866699#0" />
+                <element signature="e#5866727#5866966#0" />
+                <element signature="e#5866997#5868240#0" />
+                <element signature="e#5868265#5869423#0" />
+                <element signature="e#5869457#5871405#0" />
+                <element signature="e#5871433#5874241#0" />
+                <element signature="e#5874275#5874475#0" />
+                <element signature="e#5874503#5876063#0" />
+                <element signature="e#5876088#5876548#0" />
+                <element signature="e#5876573#5877505#0" />
+                <element signature="e#5877530#5877812#0" />
+                <element signature="e#5877843#5880061#0" />
+                <element signature="e#5880089#5881416#0" />
+                <element signature="e#5881441#5881589#0" />
+                <element signature="e#5881614#5883831#0" />
+                <element signature="e#5883856#5885653#0" />
+                <element signature="e#5885678#5886060#0" />
+                <element signature="e#5886088#5888655#0" />
+                <element signature="e#5888689#5889666#0" />
+                <element signature="e#5889700#5890450#0" />
+                <element signature="e#5890484#5890619#0" />
+                <element signature="e#5890647#5891452#0" />
+                <element signature="e#5891480#5891890#0" />
+                <element signature="e#5891924#5892453#0" />
+                <element signature="e#5892481#5893906#0" />
+                <element signature="e#5893934#5894621#0" />
+                <element signature="e#5894649#5900277#0" />
+                <element signature="e#5900302#5900590#0" />
+                <element signature="e#5900615#5901211#0" />
+                <element signature="e#5901236#5909981#0" />
+                <element signature="e#5910006#5910123#0" />
+                <element signature="e#5910174#5921287#0" />
+                <element signature="e#5921354#5921625#0" />
+                <element signature="e#5921820#5923300#0" />
+                <element signature="e#5938047#5938117#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/scene.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1710">
+              <caret line="90" column="15" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/s3m.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1102">
+              <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>super_ve</find>
+      <find>super_me</find>
+      <find>super_s</find>
+      <find>super_ge</find>
+      <find>scene</find>
+      <find>scene/scene</find>
+      <find>scene/scene&quot;</find>
+      <find>super_pe</find>
+      <find>_</find>
+      <find>B.</find>
+      <find>addS3MTilesLayerByScp</find>
+      <find>Ne.</find>
+      <find>$e</find>
+      <find>n(</find>
+      <find>t(</find>
+      <find>Wt</find>
+      <find>Pe</find>
+      <find>s.</find>
+      <find>add s3m layer failed</find>
+      <find>U.prototype.buil</find>
+      <find>analyst3D</find>
+      <find>ana</find>
+      <find>CullFace</find>
+      <find>ViewShed3D</find>
+      <find>ViewShedAnalysisFp</find>
+      <find>2000</find>
+      <find>4326</find>
+      <find>4490</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Cesium.loadXML</replace>
+      <replace>Cesium.when</replace>
+      <replace>Cesium.XML</replace>
+      <replace>Cesium.defined</replace>
+      <replace>Cesium.DeveloperError(</replace>
+      <replace>Cesium.Credential.</replace>
+      <replace>Cesium.when.</replace>
+      <replace>Cesium.Rectangle.</replace>
+      <replace>Cesium.Uri</replace>
+      <replace>Cesium.getBaseUri</replace>
+      <replace>Cesium.getFilenameFromUri</replace>
+      <replace>Cesium.Cartesian3(</replace>
+      <replace>Cesium.S3MTilesLayer</replace>
+      <replace>Cesium.XML.</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/test.js" />
+        <option value="$PROJECT_DIR$/public/scene.js" />
+        <option value="$PROJECT_DIR$/routes/s3m.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/db/db.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="S3mTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="S3mTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\Webstrom\S3mTest\data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.bin\www">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\WLBDEVELOP\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8dca33ae-d894-42bb-a618-dba5277602a1" name="Default Changelist" comment="" />
+      <created>1553160422268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553160422268</updated>
+      <workItem from="1553160423619" duration="1474000" />
+      <workItem from="1553213951807" duration="20183000" />
+      <workItem from="1553473708780" duration="1312000" />
+      <workItem from="1553559651741" duration="4118000" />
+      <workItem from="1553646035978" duration="596000" />
+      <workItem from="1553734148843" duration="565000" />
+      <workItem from="1553818759462" duration="592000" />
+      <workItem from="1553836821552" duration="592000" />
+      <workItem from="1554101360558" duration="593000" />
+      <workItem from="1554164913072" duration="590000" />
+      <workItem from="1554190774306" duration="293000" />
+      <workItem from="1564470938652" duration="56000" />
+      <workItem from="1564471131411" duration="785000" />
+      <workItem from="1564473248267" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31763000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49787837" visible="true" weight="0.24966975" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.5021216" side_tool="true" weight="0.24966975" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09335219" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/users.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/s3m.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/s3m.js</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/s3m.js</url>
+          <line>44</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/qxTest/tlTest.scp" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7923">
+          <caret line="417" selection-start-line="417" selection-end-line="417" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/db.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2165221">
+          <caret line="115836" column="600" selection-start-line="115836" selection-start-column="600" selection-end-line="115836" selection-end-column="600" />
+          <folding>
+            <element signature="e#4344203#4345378#0" />
+            <element signature="e#4345402#4346200#0" />
+            <element signature="e#4346230#4348411#0" />
+            <element signature="e#4348441#4358527#0" />
+            <element signature="e#4358552#4361726#0" />
+            <element signature="e#5836384#5842586#0" />
+            <element signature="e#5842614#5842852#0" />
+            <element signature="e#5842883#5843253#0" />
+            <element signature="e#5843281#5844268#0" />
+            <element signature="e#5844293#5844542#0" />
+            <element signature="e#5844567#5844631#0" />
+            <element signature="e#5844662#5845698#0" />
+            <element signature="e#5845741#5846105#0" />
+            <element signature="e#5846136#5847289#0" />
+            <element signature="e#5847323#5847510#0" />
+            <element signature="e#5847535#5852069#0" />
+            <element signature="e#5852094#5852294#0" />
+            <element signature="e#5852325#5854326#0" />
+            <element signature="e#5854357#5854498#0" />
+            <element signature="e#5854541#5859385#0" />
+            <element signature="e#5859416#5859524#0" />
+            <element signature="e#5859558#5859747#0" />
+            <element signature="e#5859775#5859928#0" />
+            <element signature="e#5859956#5860070#0" />
+            <element signature="e#5860098#5866330#0" />
+            <element signature="e#5866355#5866699#0" />
+            <element signature="e#5866727#5866966#0" />
+            <element signature="e#5866997#5868240#0" />
+            <element signature="e#5868265#5869423#0" />
+            <element signature="e#5869457#5871405#0" />
+            <element signature="e#5871433#5874241#0" />
+            <element signature="e#5874275#5874475#0" />
+            <element signature="e#5874503#5876063#0" />
+            <element signature="e#5876088#5876548#0" />
+            <element signature="e#5876573#5877505#0" />
+            <element signature="e#5877530#5877812#0" />
+            <element signature="e#5877843#5880061#0" />
+            <element signature="e#5880089#5881416#0" />
+            <element signature="e#5881441#5881589#0" />
+            <element signature="e#5881614#5883831#0" />
+            <element signature="e#5883856#5885653#0" />
+            <element signature="e#5885678#5886060#0" />
+            <element signature="e#5886088#5888655#0" />
+            <element signature="e#5888689#5889666#0" />
+            <element signature="e#5889700#5890450#0" />
+            <element signature="e#5890484#5890619#0" />
+            <element signature="e#5890647#5891452#0" />
+            <element signature="e#5891480#5891890#0" />
+            <element signature="e#5891924#5892453#0" />
+            <element signature="e#5892481#5893906#0" />
+            <element signature="e#5893934#5894621#0" />
+            <element signature="e#5894649#5900277#0" />
+            <element signature="e#5900302#5900590#0" />
+            <element signature="e#5900615#5901211#0" />
+            <element signature="e#5901236#5909981#0" />
+            <element signature="e#5910006#5910123#0" />
+            <element signature="e#5910174#5921287#0" />
+            <element signature="e#5921354#5921625#0" />
+            <element signature="e#5921820#5923300#0" />
+            <element signature="e#5938047#5938117#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="90" column="15" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/s3m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

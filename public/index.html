@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>倾斜模型</title>
+    <link href="./SuperMap_iClient3D_9D(2019)_for_WebGL_chs/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="http://support.supermap.com.cn:8090/webgl/examples/css/pretty.css" rel="stylesheet">
+    <script src="./SuperMap_iClient3D_9D(2019)_for_WebGL_chs/Build/Cesium/Cesium.js"></script>
+
+    <style>
+        #toolbar input {
+            vertical-align: middle;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin: 10px 0px;
+            width:150px;;
+        }
+    </style>
+</head>
+<body>
+<div id="cesiumContainer"></div>
+<
+<script type="text/javascript">
+    //初始化viewer部件
+    var viewer = new Cesium.Viewer('cesiumContainer',{
+        imageryProvider: new Cesium.WebMapTileServiceImageryProvider({
+            url: "http://t{s}.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=b0ad70dc306d789204ddb4ec0b7c2b4d",
+            layer: "tdtBasicLayer",
+            style: "default",
+            format: "image/jpeg",
+            tileMatrixSetID: "GoogleMapsCompatible",
+            subdomains:['0','1','2','3','4','5','6','7'],
+            show: false
+        })
+    });
+
+    var scene=viewer.scene;
+
+    /*var aa=addS3MTilesLayerByScp('http://www.supermapol.com/realspace/services/3D-suofeiya_church/rest/realspace/datas/Config/config',{
+        name:'测试'
+    });*/
+   /* var aa=addS3MTilesLayerByScp('http://localhost:3000/s3m/tlTest/Floor@Data/Floor@Data/config',{
+        name:'测试'
+    });
+
+    aa.then(function (result) {
+        console.log(result)
+        scene.camera.setView({
+            //将经度、纬度、高度的坐标转换为笛卡尔坐标
+            destination : new Cesium.Cartesian3.fromDegrees(114.2965776085347500,22.7012533333444570,500),
+            orientation : {
+                heading : 2.1953426301495345,
+                pitch : -0.33632707158103625,
+                roll : 6.283185307179586
+            }
+        });
+    }).otherwise(function (err) {
+        console.log(err);
+    });*/
+
+    //e------url
+    //this------------scene
+    //super_ve---------Cesium.loadXML
+    //super_me--------------Cesium.when
+    //super_s-----------------------------Cesium.XML
+    //super_ge-----------------------------Cesium.Uri
+    //super_pe---------------------Cesium.S3MTilesLayer
+
+
+    //this------------scene
+    //_--------------------Cesium.defined
+    //B--------------------Cesium.Credential
+    //m--------------------Cesium.DeveloperError
+    //h--------------------Cesium.defaultValue
+    //qe--------------------Cesium.getFilenameFromUri
+    //Ae--------------Cesium.when
+    //De---------Cesium.loadXML
+    //Ne---------Cesium.Rectangle
+    //$e-----------------------------Cesium.Uri
+    //je-----------------------------Cesium.getBaseUri
+    //qe-----------------------------Cesium.getFilenameFromUri
+    //n-----------------------------Cesium.Cartesian3
+    //t-----------------------------Cesium.BoundingSphere
+    //Pe-----------------------------Cesium.S3MTilesLayer
+    //s-----------------------------Cesium.XML
+
+
+
+    function Wt(e, t) {
+        if (e && t) {
+            var r = e.firstChild;
+            if (r) {
+                var i = r.namespaceURI,
+                    n = Cesium.XML.queryFirstNode(r, "AttachFiles", i);
+                if (n) {
+                    for (var o = Cesium.XML.queryNodes(n, "AttachFile", i), a = [], l = 0, u = o.length; u > l; l++) {
+                        var c = o[l].textContent;
+                        if (c.indexOf("water") > 0) {
+                            var d = t + c;
+                            a.push(De(d))
+                        }
+                    }
+                    if (!a.length) {
+                        return
+                    }
+                    var h = Cesium.when.defer();
+                    return Cesium.when.all(a, function (e) {
+                        for (var t = [], r = 0, i = e.length; i > r; r++) {
+                            var n = e[r];
+                            if (!n) {
+                                break
+                            }
+                            var o = {},
+                                a = n.firstChild,
+                                l = Cesium.XML.queryStringValue(a, "Version");
+                            o.version = l;
+                            var u = Cesium.XML.queryStringValue(a, "FileType");
+                            o.fileType = u;
+                            var c = Cesium.XML.queryFirstNode(a, "WaterEffect"),
+                                d = Cesium.XML.queryNumericValue(c, "AverageHeight");
+                            o.averageHeight = d;
+                            var _ = Cesium.XML.queryNodes(c, "GpuProgramParameters");
+                            o.gpuProgramParameters = [];
+                            for (var f = 0, p = _.length; p > f; f++) {
+                                var m = {};
+                                m.gpuConstants = [], m.atuoConstants = [];
+                                var v = _[f],
+                                    y = Cesium.XML.queryFirstNode(v, "GpuConstants");
+                                if (y) {
+                                    for (var g = Cesium.XML.queryNodes(y, "GpuConstantDefinition"), b = 0, C = g.length; C > b; b++) {
+                                        var w = {},
+                                            S = g[b],
+                                            x = Cesium.XML.queryNumericValue(S, "ConstType");
+                                        w.constType = x;
+                                        var T = Cesium.XML.queryNumericValue(S, "Index");
+                                        w.index = T;
+                                        var E = Cesium.XML.queryStringValue(S, "Name");
+                                        w.name = E;
+                                        var P = Cesium.XML.queryNumericValue(S, "ArraySize");
+                                        w.arraySize = P;
+                                        var A = Cesium.XML.queryNumericValue(S, "Multiple");
+                                        w.multiple = A;
+                                        var D = Cesium.XML.queryFirstNode(S, "ArrayFloat");
+                                        if (w.arrayFloat = [], D) {
+                                            for (var O = Cesium.XML.queryNodes(D, "Float"), $ = 0; P > $;) {
+                                                var M = parseFloat(O[$].textContent);
+                                                w.arrayFloat.push(M), $++
+                                            }
+                                        }
+                                        m.gpuConstants.push(w)
+                                    }
+                                }
+                                var I = Cesium.XML.queryFirstNode(v, "AutoConstants");
+                                if (I) {
+                                    for (var R = Cesium.XML.queryNodes(I, "AutoConstantEntry"), b = 0, C = R.length; C > b; b++) {
+                                        var w = {},
+                                            L = R[b],
+                                            N = Cesium.XML.queryNumericValue(L, "ParamType");
+                                        w.paramType = N;
+                                        var E = Cesium.XML.queryStringValue(L, "Name");
+                                        w.name = E;
+                                        var F = Cesium.XML.queryNumericValue(L, "PhysicalIndex");
+                                        w.physicalIndex = F;
+                                        var B = Cesium.XML.queryNumericValue(L, "ElementCount");
+                                        w.elementCount = B;
+                                        var Y = Cesium.XML.queryNumericValue(L, "Data");
+                                        w.data = Y;
+                                        var k = Cesium.XML.queryNumericValue(L, "FData");
+                                        w.fData = k;
+                                        var X = Cesium.XML.queryBooleanValue(L, "IsReal");
+                                        w.isReal = X, m.atuoConstants.push(w)
+                                    }
+                                }
+                                o.gpuProgramParameters.push(m)
+                            }
+                            t.push(o)
+                        }
+                        h.resolve(t)
+                    }, function () {
+                    }), h.promise
+                }
+            }
+        }
+    }
+
+    function addS3MTilesLayerByScp(e, r, i) {
+        if (!Cesium.defined(e)) {
+            throw new Cesium.DeveloperError("add s3m tiles layer,url is required.")
+        }
+        r = r || {};
+        var o = e;
+        Cesium.defined(Cesium.Credential.CREDENTIAL) && (o = Cesium.Credential.addToken(o));
+        var a = Cesium.defaultValue(r.name, Cesium.getFilenameFromUri(o)),
+            l = scene,
+            u = Cesium.when.defer();
+        return Cesium.loadXML(o).then(function (e) {
+            var c, d = e.firstChild,
+                f = d.namespace,
+                p = Cesium.XML.queryStringValue(d, "FileType", f),
+                m = Cesium.XML.queryBooleanValue(d, "TextureSharing", f),
+                v = Cesium.XML.queryFirstNode(d, "InstensityRange", f),
+                y = Cesium.XML.queryNumericValue(v, "MinInstensity", f),
+                g = Cesium.XML.queryNumericValue(v, "MaxInstensity", f),
+                b = Cesium.XML.queryFirstNode(d, "HeightRange", f),
+                C = Cesium.XML.queryNumericValue(b, "MinHeight", f),
+                w = Cesium.XML.queryNumericValue(b, "MaxHeight", f),
+                S = Cesium.XML.queryFirstNode(d, "Position", f),
+                x = Cesium.XML.queryNumericValue(S, "X", f),
+                T = Cesium.XML.queryNumericValue(S, "Y", f),
+                E = Cesium.XML.queryNumericValue(S, "Z", f),
+                P = Cesium.XML.queryStringValue(d, "S3MCompress", f),
+                A = Cesium.XML.queryFirstNode(d, "Bounds", f),
+                D = Cesium.XML.queryFirstNode(d, "BoundingBox", f);
+            if (Cesium.defined(A)) {
+                var O = Cesium.XML.queryNumericValue(A, "Left", f),
+                    $ = Cesium.XML.queryNumericValue(A, "Top", f),
+                    M = Cesium.XML.queryNumericValue(A, "Right", f),
+                    I = Cesium.XML.queryNumericValue(A, "Bottom", f);
+                c = Cesium.Rectangle.fromDegrees(O, I, M, $)
+            } else {
+                if (Cesium.defined(D)) {
+                    var R = Cesium.XML.queryNumericValue(D, "MinX", f),
+                        L = Cesium.XML.queryNumericValue(D, "MinY", f),
+                        N = (Cesium.XML.queryNumericValue(D, "MinZ", f), Cesium.XML.queryNumericValue(D, "MaxX", f)),
+                        F = Cesium.XML.queryNumericValue(D, "MaxY", f);
+                    Cesium.XML.queryNumericValue(D, "MaxZ", f);
+                    R = 180 * Math.abs(R) / (6378137 * Math.PI), L = 180 * Math.abs(L) / (6378137 * Math.PI), N = 180 * Math.abs(N) / (6378137 * Math.PI), F = 180 * Math.abs(F) / (6378137 * Math.PI), c = Cesium.Rectangle.fromDegrees(x - R, T - L, x + N, T + F)
+                } else {
+                    c = Cesium.Rectangle.fromDegrees(x - 0.00001, T - 0.00001, x + 0.00001, T + 0.00001)
+                }
+            }
+            var B = void 0,
+                Y = Cesium.XML.queryNodes(d, "Vol", f);
+            if (Cesium.defined(Y) && Y.length > 0) {
+                for (var k = [], X = [], V = [], U = 0, z = Y.length; z > U; U++) {
+                    var G = Y[U],
+                        H = Cesium.XML.queryStringValue(G, "Name", f);
+                    k.push(H);
+                    var W = Cesium.XML.queryStringValue(G, "AttachFileExt", f),
+                        j = Cesium.XML.queryFirstNode(G, "VolumeValueRange", f);
+                    if (Cesium.defined(j)) {
+                        var q = Cesium.XML.queryNumericValue(j, "MinValue", f),
+                            Q = Cesium.XML.queryNumericValue(j, "MaxValue", f);
+                        X.push(Q), V.push(q)
+                    }
+                    B = {
+                        bVolume: !0,
+                        strVolumeExt: W,
+                        volNames: k,
+                        maxValues: X,
+                        minValues: V
+                    }
+                }
+            }
+            var K = Cesium.XML.queryFirstNode(d, "VolumeValueRange", f);
+            if (Cesium.defined(K)) {
+                var q = Cesium.XML.queryNumericValue(K, "MinValue", f),
+                    Q = Cesium.XML.queryNumericValue(K, "MaxValue", f),
+                    J = Cesium.XML.queryStringValue(d, "AttachFileExt", f);
+                Cesium.defined(B) ? (B.volNames.push(""), B.maxValues.push(Q), B.minValues.push(q)) : B = {
+                    bVolume: !0,
+                    strVolumeExt: J,
+                    volNames: [""],
+                    maxValues: [Q],
+                    minValues: [q]
+                }
+            }
+            var Z = "";
+            if ("" != o.match(/config(\S*)/)[1]) {
+                var ee = /config([^\/]+)$/;
+                Z = o.match(ee)[1].replace(/\?/g, ""), o = o.match(/(\S*)config/)[0]
+            }
+            var te = o.replace(/config$/g, "data/path/"),
+                re = new Cesium.Uri(te),
+                ie = [],
+                ee = /\\+/g,
+                ne = Cesium.XML.queryFirstNode(d, "OSGFiles", f),
+                oe = Cesium.XML.queryNodes(ne, "Files", f);
+            if (oe.length > 0) {
+                for (var U = 0, z = oe.length; z > U; U++) {
+                    var ae = oe[U],
+                        se = Cesium.XML.queryStringValue(ae, "FileName", f);
+                    se = se.replace(ee, "/"), se = se.replace(/(\.s3m)|(\.osgb)/gi, "");
+                    var le = Cesium.getBaseUri(se),
+                        ue = Cesium.getFilenameFromUri(se),
+                        ce = {};
+                    ce.relativePath = new Cesium.Uri(le), ce.name = ue;
+                    var de = Cesium.XML.queryFirstNode(ae, "BoundingSphere", f);
+                    if (Cesium.defined(de) && de.childNodes.length) {
+                        var he = Cesium.XML.queryNumericValue(de, "CenterX", f),
+                            _e = Cesium.XML.queryNumericValue(de, "CenterY", f),
+                            fe = Cesium.XML.queryNumericValue(de, "CenterZ", f),
+                            pe = Cesium.XML.queryNumericValue(de, "Radius", f),
+                            me = new Cesium.Cartesian3(he, _e, fe);
+                        ce.bSphere = new Cesium.BoundingSphere(me, pe)
+                    }
+                    ie.push(ce)
+                }
+            } else {
+                for (var ve = Cesium.XML.queryNodes(ne, "FileName", f), U = 0, z = ve.length; z > U; U++) {
+                    var se = ve[U].textContent;
+                    se = se.replace(ee, "/"), se = se.replace(/(\.s3m)|(\.osgb)/gi, "");
+                    var le = Cesium.getBaseUri(se),
+                        ue = Cesium.getFilenameFromUri(se),
+                        ce = {};
+                    ce.relativePath = new Cesium.Uri(le), ce.name = ue, ie.push(ce)
+                }
+            }
+            var ye = {
+                    context: l.context,
+                    gl: l.context._gl,
+                    position: {
+                        lon: x,
+                        lat: T,
+                        height: E
+                    },
+                    name: a,
+                    fileType: p,
+                    dracoCompress: P,
+                    supportCompressType: l._supportCompressType,
+                    maxInstensity: g,
+                    minInstensity: y,
+                    maxHeight: w,
+                    minHeight: C,
+                    layerBounds: c,
+                    volumeObj: B,
+                    baseUri: re,
+                    rootEntities: ie,
+                    urlType: r.urlType,
+                    urlArguments: Z,
+                    cullEnabled: r.cullEnabled,
+                    horizontalLine: r.horizontalLine,
+                    isTextureShare: m,
+                    style3D: r.style3D,
+                    selectEnable: r.selectable,
+                    isVisible: r.isVisible,
+                    minVisibleAltitude: r.minVisibleAltitude,
+                    maxVisibleAltitude: r.maxVisibleAltitude,
+                    minVisibleDistance: r.minVisibleDistance,
+                    maxVisibleDistance: r.maxVisibleDistance,
+                    shadowType: r.shadowType,
+                    heading: r.heading,
+                    lodRangeScale: r.lodRangeScale,
+                    polygonOffset: r.polygonOffset,
+                    brightness: r.brightness,
+                    constrast: r.constrast,
+                    hue: r.hue,
+                    saturation: r.saturation,
+                    gamma: r.gamma,
+                    effect: r.effect,
+                    isS3MB: r.isS3MB,
+                    ignoreNormal: Cesium.defaultValue(r.ignoreNormal, !0)
+                },
+                ge = Wt(e, re);
+            if (Cesium.defined(ge)) {
+                Cesium.when(ge, function (e) {
+                    if (ye.waterEffectSet = e, Cesium.defined(r.isFlyMode) && r.isFlyMode === !0 && Cesium.defined(c)) {
+                        l.camera.flyTo({
+                            destination: c,
+                            complete: function () {
+                                setTimeout(function () {
+                                    var e = new Cesium.S3MTilesLayer(ye);
+                                    l._layers.add(e, i), u.resolve(e)
+                                }, 1000)
+                            }
+                        })
+                    } else {
+                        var t = new Cesium.S3MTilesLayer(ye);
+                        l._layers.add(t, i), u.resolve(t)
+                    }
+                })
+            } else {
+                if (r.isFlyMode === !0) {
+                    l.camera.flyTo({
+                        destination: c,
+                        complete: function () {
+                            var e = new Cesium.S3MTilesLayer(ye);
+                            l._layers.add(e, i), u.resolve(e)
+                        }
+                    })
+                } else {
+                    var be = new Cesium.S3MTilesLayer(ye);
+                    l._layers.add(be, i), u.resolve(be)
+                }
+            }
+        }).otherwise(function (e) {
+            u.reject("add s3m layer failed," + e)
+        }), u.promise
+    }
+
+
+    var scene = viewer.scene;
+    var widget = viewer.cesiumWidget;
+    var sceneLayer;
+
+    try{
+        var promise = scene.addS3MTilesLayerByScp('http://localhost:3000/s3m/qxTest/tlTest/config');
+        //var promise = scene.addS3MTilesLayerByScp('http://www.supermapol.com/realspace/services/3D-suofeiya_church/rest/realspace/datas/Config/config');
+
+        Cesium.when(promise,function(sceneLayer){
+            console.log(sceneLayer);
+
+            //设置相机位置，定位至模型
+            scene.camera.setView({
+                //将经度、纬度、高度的坐标转换为笛卡尔坐标
+                destination : new Cesium.Cartesian3.fromDegrees(114.2965776085347500,22.7012533333444570,500),
+                orientation : {
+                    heading : 2.1953426301495345,
+                    pitch : -0.33632707158103625,
+                    roll : 6.283185307179586
+                }
+            });
+            var aa=scene.addS3MTilesLayerByScp('http://localhost:3000/s3m/tlTest/Floor@Data/Floor@Data/config',{
+                name:'测试'
+            });
+
+        },function(){
+            var title = '加载SCP失败，请检查网络连接状态或者url地址是否正确？';
+            widget.showErrorPanel(title, undefined, e);
+        });
+    }
+    catch(e){
+        if (widget._showRenderLoopErrors) {
+            var title = '渲染时发生错误，已停止渲染。';
+            widget.showErrorPanel(title, undefined, e);
+        }
+    }
+</script>
+</body>
+</html>
