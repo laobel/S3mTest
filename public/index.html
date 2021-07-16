@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>倾斜模型</title>
-    <link href="./SuperMap_iClient3D_9D(2019)_for_WebGL_chs/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <link href="./SuperMap_iClient3D_10i(2020)_sp2_for_WebGL_29090/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
     <link href="http://support.supermap.com.cn:8090/webgl/examples/css/pretty.css" rel="stylesheet">
-    <script src="./SuperMap_iClient3D_9D(2019)_for_WebGL_chs/Build/Cesium/Cesium.js"></script>
+    <script type="text/javascript" src="./SuperMap_iClient3D_10i(2020)_sp2_for_WebGL_29090/Build/Cesium/Cesium.js"></script>
 
     <style>
         #toolbar input {
@@ -396,8 +396,9 @@
     var sceneLayer;
 
     try{
-        var promise = scene.addS3MTilesLayerByScp('http://localhost:3000/s3m/qxTest/tlTest/config');
-        //var promise = scene.addS3MTilesLayerByScp('http://www.supermapol.com/realspace/services/3D-suofeiya_church/rest/realspace/datas/Config/config');
+        //var promise = addS3MTilesLayerByScp('http://127.0.0.1:3000/s3m/ydcyy/YDXXY/config');
+        var promise = scene.addS3MTilesLayerByScp('http://127.0.0.1:3000/s3m/ydcyy/rest/realspace/YDXXY/config');
+        //var promise = scene.addS3MTilesLayerByScp('http://127.0.0.1:3000/s3m/ydcyy/YDXXY?type=oss-cn');
 
         Cesium.when(promise,function(sceneLayer){
             console.log(sceneLayer);
@@ -405,16 +406,16 @@
             //设置相机位置，定位至模型
             scene.camera.setView({
                 //将经度、纬度、高度的坐标转换为笛卡尔坐标
-                destination : new Cesium.Cartesian3.fromDegrees(114.2965776085347500,22.7012533333444570,500),
+                destination : new Cesium.Cartesian3.fromDegrees(102.875805622352290,24.816619546064175,500),
                 orientation : {
                     heading : 2.1953426301495345,
                     pitch : -0.33632707158103625,
                     roll : 6.283185307179586
                 }
             });
-            var aa=scene.addS3MTilesLayerByScp('http://localhost:3000/s3m/tlTest/Floor@Data/Floor@Data/config',{
+            /* var aa=scene.addS3MTilesLayerByScp('http://localhost:3000/s3m/tlTest/Floor@Data/Floor@Data/config',{
                 name:'测试'
-            });
+            }); */
 
         },function(){
             var title = '加载SCP失败，请检查网络连接状态或者url地址是否正确？';

@@ -1,56 +1,26 @@
 var express = require('express');
+var url = require("url");
 var fs = require("fs");
 var path = require("path");
 var router = express.Router();
 
 var root = path.resolve(__dirname, '..').replace(/\\/g, '/');
 
-
 /* GET users listing. */
 router.get('/*', function (req, res, next) {
-    var req_path =req.url;
-    let queryObj=req.query;
+    var req_path = url.parse(req.url).path;
+    req_path = decodeURIComponent(req_path);
+    req_path = req_path.split('?')[0]; //去参数
 
-    if(['oss-cn','aliyuncs'].includes(queryObj).type){
-        aliyun(req_path,res,next);
-    }else{
-        iserver(req_path,res,next);
-    }    
-});
-
-router.post('/*', function (req, res, next) {    
-    res.status(200).json({
-        postResultType:"CreateChild",
-        succeed:true
-    });
-    res.end();
-});
-
-
-//阿里云方法
-function aliyun(req_path,res,next){
     var filepath = root + req_path;
 
     var regex_extension = /([^\.\/\\]+)\.([\a-\z\A-\Z0-9]+)$/i;
     var regex_extension_Arr = regex_extension.exec(req_path);
 
-   
-    if (regex_extension_Arr === null) {
-        filepath = root + '/data' + req_path.replace('/config', '') + '.scp';
-    } else {
-        filepath = root + '/data/' + req_path;
-    }req_pathreq_path
-
-    readFileAndRes(filepath,res,next);
-}
-
-//iserver方法
-function iserver(req_path,res,next){
-    var filepath = root + req_path;
-
-    var regex_extension = /([^\.\/\\]+)\.([\a-\z\A-\Z0-9]+)$/i;
-    var regex_extension_Arr = regex_extension.exec(req_path);
-
+    /*
+    var regex_config=/(.*?)\/Config\//i;
+    var regex_config_Arr=regex_config.exec(req_path);
+    */
 
     if (regex_extension_Arr === null) {
         filepath = root + '/data' + req_path.replace('/config', '') + '.scp';
@@ -67,19 +37,12 @@ function iserver(req_path,res,next){
         }
     }
 
-    if(filepath.includes('/rest/realspace/login.json')){
-        res.status(200).json({
-            random:"819891636059174",
-            jsessionID:"999671819"
-        });
-        res.end();
-    }else{
-        filepath=filepath.replace('/rest/realspace', '');
-        readFileAndRes(filepath,res,next);
-    }
-}
 
-function readFileAndRes(filepath,res,next){
+
+
+    console.log(req_path);
+    console.log(filepath);
+
     fs.exists(filepath, function (exists) {
         if (exists) {
             fs.stat(filepath, function (err, stats) {
@@ -116,6 +79,6 @@ function readFileAndRes(filepath,res,next){
             res.end('<div styel="color:black;font-size:22px;">404 not found</div>');
         }
     });
-}
+});
 
 module.exports = router;
